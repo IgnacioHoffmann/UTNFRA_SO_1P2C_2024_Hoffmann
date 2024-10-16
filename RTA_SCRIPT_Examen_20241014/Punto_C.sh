@@ -26,7 +26,7 @@ sudo chmod 750 /Examenes-UTN/alumno_1
 
 sudo mkdir -p /Examenes-UTN/alumno_2
 sudo chown p1c2_2024_A2:p1c2_2024_gAlumno /Examenes-UTN/alumno_2
-sudo chmod 740 /Examenes-UTN/alumno_2
+sudo chmod 760 /Examenes-UTN/alumno_2
 
 sudo mkdir -p /Examenes-UTN/alumno_3
 sudo chown p1c2_2024_A3:p1c2_2024_gAlumno /Examenes-UTN/alumno_3
@@ -37,7 +37,7 @@ sudo chown p1c2_2024_P1:p1c2_2024_gProfesores /Examenes-UTN/profesores
 sudo chmod 775 /Examenes-UTN/profesores
 
 # Crear archivos de validación en las carpetas correspondientes
-su -c "whoami > /Examenes-UTN/alumno_1/validar1.txt" p1c2_2024_A1
-su -c "whoami > /Examenes-UTN/alumno_2/validar2.txt" p1c2_2024_A2
-su -c "whoami > /Examenes-UTN/alumno_3/validar3.txt" p1c2_2024_A3
-su -c "whoami > /Examenes-UTN/profesores/validar_p1.txt" p1c2_2024_P1
+su -c "whoami > /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_A1
+su -c "whoami > /Examenes-UTN/alumno_2/validar.txt" p1c2_2024_A2
+su -c "whoami > /Examenes-UTN/alumno_3/validar.txt" p1c2_2024_A3
+su -c "whoami > /Examenes-UTN/profesores/validar.txt" p1c2_2024_P1
