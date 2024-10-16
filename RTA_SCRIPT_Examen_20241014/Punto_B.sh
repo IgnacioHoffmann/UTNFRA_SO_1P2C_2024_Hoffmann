@@ -9,15 +9,14 @@ echo     # Primer sector por defecto
 echo     # Usar todo el disco para la partición extendida
 
 # Crear 10 particiones lógicas de 1GB dentro de la extendida
-for i in {1..10}; do
+for i in {5..14}; do
     echo n   # Nueva partición lógica
     echo     # Número de partición por defecto
-    echo     # Primer sector por defecto
-    echo +1G # Tamaño de la partición lógica (1GB)
+    echo +1000M  # Tamaño de la partición lógica (1GB)
 done
 
 echo w   # Escribir los cambios
-) | fdisk /dev/sdc
+) | sudo fdisk /dev/sdc
 
 # Recargar la tabla de particiones
 sudo partprobe /dev/sdc
