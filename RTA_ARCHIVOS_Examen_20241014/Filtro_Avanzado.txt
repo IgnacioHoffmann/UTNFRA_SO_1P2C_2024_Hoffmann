@@ -1,0 +1,4 @@
+Mi IP Publica es: 186.57.80.171
+Mi usuario es: root
+El Hash de mi Usuario es: $y$j9T$FTPZpquETGgK0AmiDQ0Eb.$5we9GsuJuALZ9VuLLbuP.XdvVsvg/ypRQkYp93XP8PC
+La URL de mi repositorio es: https://github.com/IgnacioHoffmann/UTNFRA_SO_1P2C_2024_Hoffmann.git
