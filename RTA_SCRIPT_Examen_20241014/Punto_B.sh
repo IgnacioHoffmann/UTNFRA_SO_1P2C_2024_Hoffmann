@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# Particionar el disco de 10GB en 10 particiones lógicas iguales de 1GB cada una
+# Particionar el disco de 10GB en 10 particiones logicas iguales de 1GB cada una
 (
-echo n   # Nueva partición
-echo e   # Tipo de partición extendida
-echo     # Número de partición por defecto (2)
+echo n   # Nueva particion
+echo e   # Tipo de particion extendida
+echo     # Número de partición por defecto 
 echo     # Primer sector por defecto
-echo     # Usar todo el disco para la partición extendida
+echo     # Usar todo el disco para la particion extendida
 
-# Crear 10 particiones lógicas de 1GB dentro de la extendida
+# Crear 10 particiones logicas de 1GB dentro de la extendida
 for i in {5..14}; do
-    echo n   # Nueva partición lógica
-    echo     # Número de partición por defecto
-    echo +1000M  # Tamaño de la partición lógica (1GB)
+    echo n   # Nueva particion logica
+    echo     # Número de particion por defecto
+    echo +1000M  # Tamaño de la particion logica (1GB)
 done
 
 echo w   # Escribir los cambios
@@ -23,7 +23,7 @@ sudo partprobe /dev/sdc
 
 # Formatear las particiones como ext4
 for i in {5..14}; do
-    mkfs.ext4 /dev/sdc${i}  # Formatear las particiones lógicas
+    mkfs.ext4 /dev/sdc${i}  # Formatear las particiones logicas
 done
 
 # Crear directorios de montaje si no existen
